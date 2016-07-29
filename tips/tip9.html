@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    //翻转字符串
+    var str = "acbacb";
+    str.split('').reverse().join('');
+
+    //字符串去重和统计个数
+    function caculateExistNum(str) {
+        if (typeof str === 'string') {
+            res = {};
+            var charArr = str.split('');
+            charArr.forEach(function (eachChar,content) {//此处的content可以省略
+                res[eachChar] = res[eachChar] ? res[eachChar] + 1 : 1;
+                console.log(content);
+            });
+            console.log(res);
+        }
+        return res;
+    }
+
+    var aa = '12345678901234567890';
+    caculateExistNum(aa);
+</script>
+
+</body>
+</html>

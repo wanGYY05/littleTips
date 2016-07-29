@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //1.被当做对象的方法被调用
+    //2.函数之内调用
+    //3.在new中调用
+    //4.明确调用this，使用call和apply
+    //5..bind()
+    //6.箭头函数
+//    window.name = "global";
+//    function getname() {
+//        console.log(this.name);
+//    }
+//    getname();
+//    obj = {
+//        name: "part",
+//        getname : function(){
+//            console.log(this.name);
+//        }
+//    };
+//    var b=obj.getname;
+//    b();
+
+
+
+    function Person(name,age) {
+        this.name=name;
+        this.age=age;
+        return {
+            name1:"wyy"
+        }
+    }
+
+    var a=new Person("wangjinkai",18);//a成为了一个对象
+    console.log(a);
+
+</script>
+</body>
+</html>

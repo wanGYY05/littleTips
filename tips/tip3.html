@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    function sum() {
+        console.log(arguments);
+    }
+    sum();
+
+        OBJ={
+        name:'asdf',
+        age:12,
+        sex:'man'
+    };
+    function transform(obj){
+        var arr = [];
+        for(var item in obj){
+            arr.push(item + ':' + obj[item]);
+        }
+        return arr;
+    }
+    console.log(transform(OBJ));
+    console.log(a=JSON.stringify(OBJ));
+    console.log(JSON.parse(a));
+
+</script>
+</html>
