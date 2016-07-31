@@ -20,7 +20,17 @@
 7、js中的this总结(https://gold.xitu.io/entry/57981b1879bc44006654bd62)(in a word:谁调用指向谁)
 8、声明一个构造函数，人有age，name,like.还有play(即function)；iframe标签（状态码：401没登录403登录没权限  )
 9、翻转字符串；数组元素去重和统计个数
-10、
+10、promise:
+   三种状态
+   1:进行时(pedding)->  2成功(resolved)->2,3二者不可能相互转换
+                        3失败(reject)
+   声明
+   var a=new Promise();
+   //回调函数：function sum(a,v,callvack){a+b;callback()}
+   //变量提升：a=12;a的作用域全局
+   let a=1;
+   let promise=new Promise(callback(resolve,reject)=>{if(a>0){resolve();}else{reject()}});//Promise括号中的参数是一个callback函数
+   promise.then(()=>{正确时执行的函数}).catch()//错误的时候执行catch
 11、
 12、
 13、
@@ -30,7 +40,9 @@
 17、
 18、
 19、
-20、
+20、DOM是对元素操作的BOM是对浏览器操作的比如LocalStorage就是
+事件
+跨域：iframe
 
 
 

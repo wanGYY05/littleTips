@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let oprNum = function (a, b, c) {
+        return new Promise(function (resolve, reject) {
+            if (c > 0) {
+                resolve(a + b);
+            } else {
+                if (c === 0) {
+                    throw new Error('shabi');
+                } else {
+                    reject(a - b);
+                }
+            }
+        })
+    };
+
+    oprNum(1, 2, 0).then(function (data) {
+        console.log(data);
+    }, function (data) {
+        console.log(data, 'www')
+    });
+
+    oprNum(1, 2, 0).then(function (data) {
+        console.log(data);
+    }).catch(function (data) {
+        console.log(data, 'xxx');
+    })
+</script>
+
+</body>
+</html>
